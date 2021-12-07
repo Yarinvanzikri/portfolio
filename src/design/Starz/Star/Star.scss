@@ -1,0 +1,11 @@
+.Starz {
+  position: absolute;
+
+  .star {
+    position: relative;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: #f9f4a2;
+  }
+}
