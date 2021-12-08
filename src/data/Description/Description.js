@@ -1,8 +1,13 @@
 import React from 'react';
+import { motion } from "framer-motion"
 import './Description.scss';
 function Description(props) {
     return (
-        <div className='Description'>
+        <motion.div className='Description'
+          initial={{y: '-100vh', visibility: 'hidden'}}
+          animate={{y: 0 , visibility: 'visible'}}
+          transition={{duration: 1.5, type: "spring" , delay: 3.5}}
+        >
             <div className="about-me">
                 <h1>Hi My name Is Yarin</h1>
                 <p> Junior Node.js developer,<br /> with experience in Front-end technologies such as HTML,
@@ -11,7 +16,7 @@ function Description(props) {
                     opportunities to learn and grow.</p>
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 

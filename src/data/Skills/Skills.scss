@@ -1,16 +1,17 @@
 .Skills {
   position: absolute;
-  width: 85%;
+  width: 50%;
   background: rgb(114, 18, 80, 0.2);
   box-shadow: inset 100px 10px 100px 100px rgba(37, 2, 38, 0.88);
   border: 2px solid #e53704;
   border-radius: 50px;
   margin: 0 auto;
   padding: 20px;
-  top: 50vh;
+  top: 80vh;
 
 
 }
+
 .mySkills {
   text-align: center;
   p{
@@ -22,6 +23,10 @@
     opacity: 100%;
     color: #e53704 ;
   }
-
-
 }
+@media screen and (max-width: 600px) {
+  .Skills {
+    width: 85%;
+    }
+}
+

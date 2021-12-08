@@ -1,0 +1,40 @@
+.ContactMe {
+  position: absolute;
+  width: 70%;
+  background: rgb(114, 18, 80, 0.2);
+  box-shadow: inset 100px 10px 100px 100px rgba(37, 2, 38, 0.88);
+  border: 2px solid #e53704;
+  border-radius: 50px;
+  margin: 0 auto;
+  padding: 20px;
+  top: 160vh;
+
+  h1 {
+    text-align: center;
+    opacity: 100%;
+    color: #e53704 ;
+  }
+
+  &__inputs {
+    opacity: 100%;
+    color: #e19681;
+    text-align: left;
+    margin: 25px;
+
+    input {
+      margin: 10px;
+    }
+  }
+
+  &__btn {
+    margin: 25px;
+    outline: none;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .ContactMe {
+    width: 85%;
+    top: 195vh;
+  }
+}
