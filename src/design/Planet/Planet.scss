@@ -1,0 +1,114 @@
+
+$purple1 : #181743;
+$purple2 : #730F8E;
+$purple-pink:#A21190;
+$pink : #EA3281;
+$purple-pink1: #CE0682;
+$blue: #6E81E3;
+$light-pink: #eb6db4;
+$fuscia : #f9026d;
+$meteor-yellow: #fedc01;
+
+.Planet {
+  position: absolute;
+  top: 4vh;
+  right: 25vw;
+
+}
+.planet-container {
+  width:200px;
+  height:200px;
+  padding:20px;
+  border-radius:200px;
+  background: (linear-gradient(150deg, $fuscia, transparent,transparent));
+  position: absolute;
+  left: 42%;
+  box-shadow:  200px 250px 500px 20px rgba(29, 22, 24, 0.90);
+  .shine {
+    width: 0;
+    height: 0;
+    position:absolute;
+    border-left: 33px solid transparent;
+    border-right: 33px solid transparent;
+    border-top: 26px solid $light-pink;
+    border-radius:50%;
+    transform: rotate(-40deg);
+    top: 45px;
+    left: 38px;
+    &::after {
+      content:"";
+      position:absolute;
+      background: (linear-gradient(190deg,#c90779, #770e8d, #35145a));
+      height:160px;
+      width:160px;
+      border-radius: 100px;
+      left: -78px;
+      top: -16px;
+    }
+  } //end of shine
+
+  .shine-2 {
+    position: absolute;
+    width: 13px;
+    height: 11px;
+    background: #eb6db4;
+    border-radius: 100px;
+    top: 65px;
+    left: 45.5px;
+    transform: rotate(-55deg);
+    &::after {
+      @extend .shine-2;
+      content: "";
+      top: 9px;
+      left: 43.5px;
+      transform: rotate(206deg);
+      width: 12px;
+      height: 10px;
+    }
+
+    &::before {
+      content :"";
+      position:absolute;
+      height:10px;
+      width:14px;
+      background:$light-pink;
+      border-radius: 200px;
+      top: 24px;
+      left: 60px;
+      transform: rotate(40deg);
+    }
+  }
+  .planet-ring {
+    width:300px;
+    height:40px;
+    position:absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid $fuscia;
+    border-left: 10px solid $fuscia;
+    border-right: 10px solid $fuscia;
+    border-radius: 100%;
+    left: -40px;
+    transform: rotate(-30deg);
+    top: 80px;
+
+
+    &::after {
+
+    }
+  }
+
+  .planet-ring2 {
+    @extend .planet-ring;
+    border-top:10px solid rgba(249, 2, 108, 0.7);
+    z-index:0;
+    box-shadow:  30px 2px 30px 20px rgba(29, 112, 208, 0.80);
+  }
+  .planet {
+    position: absolute;
+    width:200px;
+    height:200px;
+    background: linear-gradient(150deg, $fuscia, $purple2, transparent);
+    border-radius: 100px;
+    box-shadow: inset 20px 2px 30px 2px rgba(29, 12, 208, 0.70);
+  } //end of planet
+} //end of planet-container

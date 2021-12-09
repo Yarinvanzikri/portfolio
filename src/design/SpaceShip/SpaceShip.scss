@@ -2,6 +2,7 @@
   transform: scale(0.7) rotate(40deg);
   position: absolute;
   top: 20%;
+  z-index: 100;
 
   #animation {
     position: relative;
@@ -11,7 +12,7 @@
     height: 100%;
     top: 0%;
     left: 0%;
-    z-index: 1;
+    z-index: 7;
   }
 
   .spaceship {

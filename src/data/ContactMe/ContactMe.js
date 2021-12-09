@@ -3,6 +3,7 @@ import {motion, useAnimation} from "framer-motion"
 import './ContactMe.scss'
 import {useInView} from "react-intersection-observer";
 import SpaceShip from "../../design/SpaceShip/SpaceShip";
+import Clouds from "../../design/Clouds/Clouds";
 function ContactMe(props) {
 
     const {ref, inView, entry} = useInView({
@@ -12,6 +13,7 @@ function ContactMe(props) {
     console.log('ContactMe entry: ', entry)
     const control3 = useAnimation();
     const controlShip3 = useAnimation();
+    const controlClouds = useAnimation();
 
     useEffect (() => {
         console. log ("use effect hook,  contactMe inView =", inView);
@@ -33,6 +35,14 @@ function ContactMe(props) {
                          duration: 5, delay : 5
                     }
                 });
+                controlClouds.start({
+                    opacity: 1,
+                    transition: {
+                        duration: 5,
+                        delay: 7,
+                    }
+
+                });
             }
             if (!inView){
                 control3.start({x: '-150vw' })
@@ -43,6 +53,10 @@ function ContactMe(props) {
                     duration: 4,
                     scale: 0.3,
                 });
+                controlClouds.start({
+                    opacity: 0,
+                    duration: 10,
+                })
             }
 
         } else {
@@ -56,23 +70,34 @@ function ContactMe(props) {
                 });
                 controlShip3.start({
                     x: 0,
-                    y: '70vh',
+                    y: ['60vh','60vh','60vh','60vh','60vh','60vh', '75vh', '80vh', '85vh','90vh','95vh','100vh','105vh','110vh','115vh', '120vh'],
                     rotate: 270,
                     scale: 1.5,
                     transition: {
-                         duration: 4, delay : 6
+                         duration: 8, delay : 6
+                    }
+                });
+                controlClouds.start({
+                            opacity: 1,
+                    transition: {
+                        duration: 10,
+                        delay: 8
                     }
                 });
             }
             if (!inView) {
-                control3.start({x: '-150vw'})
+                control3.start({x: '-150vw'});
                 controlShip3.start({
                     x: '100vw',
                     y: "50vh",
                     rotate: 200,
-                    duration: 4,
+                    duration: 5,
                     scale: 0.3,
                 });
+                controlClouds.start({
+                        opacity: 0,
+                        duration: 10,
+                })
             }
         }
     }, [inView]);
@@ -109,9 +134,13 @@ function ContactMe(props) {
                 </form>
             </motion.div>
             <motion.div
-                animate={controlShip3}
-            >
-                <SpaceShip/>
+                animate={controlShip3}>
+                <SpaceShip />
+            </motion.div>
+
+            <motion.div
+                animate={controlClouds}>
+                <Clouds />
             </motion.div>
         </div>
 

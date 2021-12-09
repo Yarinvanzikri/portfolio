@@ -1,5 +1,6 @@
 import React from 'react';
 import Star from "./Star/Star";
+import Meteor from "../Meteor/Meteor";
 
 function Space() {
         function random(min, max) {
@@ -18,7 +19,9 @@ function Space() {
         }
 
 return (
-        <div className="Starz">
+        <div className="Space">
+            <Meteor/>
+            <Meteor/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+2} duration={randomDuration()+10000} name={'glowBig'}/>

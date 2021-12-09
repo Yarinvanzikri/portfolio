@@ -1,0 +1,161 @@
+$purple1 : #181743;
+$purple2 : #730F8E;
+$purple-pink:#A21190;
+$pink : #EA3281;
+$purple-pink1: #CE0682;
+$blue: #6E81E3;
+$light-pink: #eb6db4;
+$fuscia : #f9026d;
+$meteor-yellow: #fedc01;
+
+.Meteor{
+  position: absolute;
+}
+
+.meteor-container {
+  position:absolute;
+  width:auto;
+  height:auto;
+  top:800px;
+  left:550px;
+  animation: meteor-drop 20s ease infinite;
+  animation-delay: 2s;
+  transform:(rotate(40deg));
+  opacity:0;
+
+  div {
+  transition :all 0.3s ease;
+  }
+  div:nth-child(1) {
+    background:linear-gradient(to top, $purple2, transparent);
+    height:150px;
+    width:20px;
+    border-radius: 100px;
+    opacity: 0.8;
+    position:absolute;
+    left: -5.5px;
+    top: -96px;
+    z-index:-2
+  }
+
+  div:nth-child(2) { //meteor second tail
+    width:12px;
+    height:100px;
+    background: linear-gradient(to top, $fuscia, transparent);
+    border-radius: 500px;
+    position:absolute;
+    opacity:0.8;
+    left:-1.5px;
+    top:-53px;
+  }
+
+  div:nth-child(3) { //meteor circle
+    width:8px;
+    height:8px;
+    background:$meteor-yellow;
+    border-radius: 100px;
+    top: 35px;
+    position:absolute;
+    z-index:2;
+  }
+  div:nth-child(4) { //meteor tail
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid $meteor-yellow;
+    z-index:1;
+    top:8px;
+    position:absolute;
+  }
+}
+
+.meteor-container-2 {
+  position:absolute;
+  width:auto;
+  height:auto;
+  top:900px;
+  left:650px;
+  animation:meteor-drop2 35s ease infinite;
+  animation-delay:3s;
+  transform:rotate(40deg) scale(0.9);
+  opacity:0;
+
+  div {
+    transition:all 0.3s ease;
+  }
+  div:nth-child(1) {
+    background : linear-gradient(to top, #730F8EFF, transparent);
+    height:150px;
+    width:20px;
+    border-radius: 100px;
+    opacity: 0.8;
+    position:absolute;
+    left: -5.5px;
+    top: -96px;
+    z-index:-2
+  }
+
+  div:nth-child(2) { //meteor second tail
+    width:12px;
+    height:100px;
+    background:linear-gradient(to top, $fuscia, transparent);
+    border-radius:500px;
+    position:absolute;
+    opacity:0.8;
+    left:-1.5px;
+    top:-53px;
+  }
+
+  div:nth-child(3) { //meteor circle
+    width:8px;
+    height:8px;
+    background:$meteor-yellow;
+    border-radius:100px;
+    top: 35px;
+    position:absolute;
+    z-index:2;
+  }
+  div:nth-child(4) { //meteor tail
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid $meteor-yellow;
+    z-index:1;
+    top:8px;
+    position:absolute;
+  }
+}
+@keyframes meteor-drop {
+  0% {
+    opacity:0;
+    top:1vh;
+    left:150vh;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    left:15vh;
+    top:90vh;
+    opacity:0;
+  }
+}
+
+
+@keyframes meteor-drop2 {
+  0% {
+    opacity:0;
+    top:100vh;
+    left:130vh;
+  }
+  50% {
+    opacity:1;
+  }
+  100% {
+    left:0vh;
+    top:200vh;
+    opacity:0;
+  }
+}
