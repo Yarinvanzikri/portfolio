@@ -34,16 +34,16 @@ function App() {
                   </motion.div> }
               {(window.innerWidth >= 600) ?
                   <motion.div
-                  initial={{y: '100vh', x: "40vw"}}
+                  initial={{y: '200vh', x: "40vw"}}
                   animate={{y: '-150vh', x: '40vw' }}
-                  transition={{ type: "spring", duration: 3, bounce: 0.3, delay: 4}}>
+                  transition={{ type: "spring", duration: 4, bounce: 0.3, delay: 4}}>
                       <Planet/>
                   </motion.div>
                  :
                   <motion.div
-                      initial={{y: '100vh', x: "-5vw", scale: 0.3}}
+                      initial={{y: '200vh', x: "-5vw", scale: 0.3}}
                       animate={{y: '-145vh', x: '-5vw' ,scale: 0.6}}
-                      transition={{ type: "spring", duration: 3, bounce: 0.2, delay: 3.5}}>
+                      transition={{ type: "spring", duration: 4, bounce: 0.2, delay: 3.5}}>
                       <Planet/>
                   </motion.div>
               }
