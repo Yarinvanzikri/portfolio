@@ -2,15 +2,19 @@
   box-sizing: border-box;
   margin: 0;
   font-family: 'Iceland-Regular', sans-serif;}
-@font-face {
-  font-family: "Iceland-Regular";
-  src: url("assets/Iceland/Iceland-Regular.ttf") format("truetype");
-}
+
 
 html, body, #root {
   height: 100%;
+
 }
+
 .App {
   position: relative;
   min-height: 100%;
+  overflow: hidden;
+}
+@font-face {
+  font-family: "Iceland-Regular";
+  src: url("assets/Iceland/Iceland-Regular.ttf") format("truetype");
 }

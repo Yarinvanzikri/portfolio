@@ -2,19 +2,21 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Routes, Route, Link } from "react-router-dom";
 import Space from "./design/Space/Space";
-import Description from "./data/Description/Description";
+import Introduction from "./data/Introduction/Introduction";
 import SpaceShip from "./design/SpaceShip/SpaceShip";
 import Skills from "./data/Skills/Skills";
 import MyWork from "./data/MyWork/MyWork";
 import ContactMe from "./data/ContactMe/ContactMe";
 import Planet from "./design/Planet/Planet";
 import './App.scss';
+import Description from "./data/Description/Description";
 function App() {
   return (
       <div className="App" >
           <Space/>
           <div className="App__mainHeader">
-                <Description />
+                <Introduction />
+                <Description/>
                 <Skills />
                 <MyWork />
                 <ContactMe/>
@@ -55,5 +57,5 @@ function App() {
 export default App;
 
 {/*<Routes>*/}
-{/*    <Route path="/" element={<Description />} />*/}
+{/*    <Route path="/" element={<Introduction />} />*/}
 {/*</Routes>*/}

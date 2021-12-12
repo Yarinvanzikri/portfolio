@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/screen2.png'
+import logo from '../../assets/screen4.png'
 import './Logo.scss';
 
 function Logo(props) {
