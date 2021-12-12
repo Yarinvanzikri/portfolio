@@ -21,7 +21,7 @@ function Description() {
         if(window.innerWidth <= 600) {
             if (inView){
                 control0.start({
-                    x: '42.5vw',
+                    x: '-42.5vw',
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.3
                     }
@@ -83,8 +83,8 @@ function Description() {
             <div className="aboutMe">
                 <h1>About Me</h1>
                 <p> Junior Node.js developer, with experience in Front-end technologies such as HTML,
-                    CSS, React.js as well as MongoDB, REST API, and UI/UX. Graduated from Netcraft
-                    Fullstack course. Looking for entry-level roles in tech companies with
+                    CSS, React.js as well as MongoDB, REST API, and UI/UX.<br /> Graduated from Netcraft
+                    Fullstack course. <br />Looking for entry-level roles in tech companies with
                     opportunities to learn and grow.
                 </p>
             </div>

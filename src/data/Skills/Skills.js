@@ -80,12 +80,39 @@ function Skills() {
                         animate={control}>
                 <div className="mySkills">
                     <h1>My Skills</h1>
-                    <p> Netcraft Academy - Full Stack Development Course , 2021
+                    <p>
                         Javascript, jQuery, CSS3, SAAS, HTML5, Git, React.js, Node.js, MongoDB, Mongoose,
                         REST API, Web Accessibility, Responsiveness.
                         Working with Webpack, Chrome DevTools, Webstorm, Visual Studio Code, etc.</p>
                 </div>
+                <div className="skillsBar">
+                    <div>
+                        <li>
+                            <h3>HTML5</h3><span className="bar"> <span className="html"> </span></span>
+                        </li>
+                        <li>
+                            <h3>CSS3</h3><span className="bar"> <span className="css"> </span></span>
+                        </li>
+                        <li>
+                            <h3>JAVASCRIPT</h3><span className="bar"> <span className="javascript"> </span></span>
+                        </li>
+                    </div>
+                    <div>
+                        <li>
+                            <h3>NODE.JS</h3><span className="bar"> <span className="node"> </span></span>
+                        </li>
+                        <li>
+                            <h3>REACT.JS</h3><span className="bar"> <span className="react"> </span></span>
+                        </li>
+                        <li>
+                            <h3>GIT</h3><span className="bar"> <span className="git"> </span></span>
+                        </li>
+                    </div>
+
+
+                </div>
             </motion.div>
+
             <motion.div
                 animate={controlShip}
             >

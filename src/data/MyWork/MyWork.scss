@@ -7,27 +7,30 @@
   border-radius: 50px;
   margin: 0 auto;
   padding: 20px;
-  top: 110vh;
+  top: 160vh;
 
 }
 .projects {
-  text-align: center;
+  text-align: left;
   p{
-    font-size: 1vw;
+    font-size: 2.5vh;
     color: #1669be;
     text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
     text-align: left;
   }
   h1{
-    font-size: 2vw;
+    font-size: 3.5vh;
     color: #940869;
     text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
   }
-
+  .projectHeader {
+    text-align: center;
+    font-size: 4.5vh;
+  }
 }
 @media screen and (max-width: 600px) {
   .MyWork {
     width: 85%;
-    top: 130vh;
+    top: 150vh;
   }
 }

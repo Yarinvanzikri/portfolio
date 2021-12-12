@@ -88,15 +88,18 @@ function MyWork(props) {
                         animate={control2}>
                 <div className='projects'>
                     <div>
+                        <div className={'projectHeader'}>
+                            <h1>My Projects</h1>
+                        </div>
                         <div>
                             <h1> Instagram</h1>
                         </div>
                         <div>
-                            <p>A social network built with Vuejs, Vuex, Css, Quasar framework FireBase, Nodejs and Express.</p>
+                            <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
                         </div>
                         <div>
                             <button>
-                                GITHUB
+                                GITHUBh
                             </button>
                             <button>
                                 DEMO
