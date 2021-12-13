@@ -3,6 +3,7 @@ import {motion, useAnimation} from "framer-motion"
 import {useInView} from'react-intersection-observer'
 import './MyWork.scss'
 import SpaceShip from "../../design/SpaceShip/SpaceShip";
+import {Link} from "react-router-dom";
 function MyWork(props) {
 
     const {ref, inView, entry} = useInView({
@@ -92,18 +93,46 @@ function MyWork(props) {
                             <h1>My Projects</h1>
                         </div>
                         <div>
-                            <h1> Instagram</h1>
+                            <h1> Instagram </h1>
                         </div>
                         <div>
                             <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
                         </div>
                         <div className="MyWork__btn">
-                            <button>
-                                GITHUB
-                            </button>
-                            <button>
-                                DEMO
-                            </button>
+                            <a href='https://github.com/Yarinvanzikri/instagram-ui'>
+                                <button>
+                                    GITHUB - UI
+                                </button>
+                            </a>
+                            <a href="https://github.com/Yarinvanzikri/instagram-api">
+                                <button>
+                                    GITHUB - API
+                                </button>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h1> Instagram - Demo(Heroku)</h1>
+                        </div>
+                        <div>
+                            <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
+                        </div>
+                        <div className="MyWork__btn">
+                            <a href="https://radiant-retreat-03616.herokuapp.com/">
+                                <Link to='/instagram/info'>
+                                    <button>
+                                        Description
+                                    </button>
+                                </Link>
+                            </a>
+                            <a href="https://radiant-retreat-03616.herokuapp.com/">
+                                <button>
+                                    DEMO
+                                </button>
+                            </a>
+
                         </div>
                     </div>
                     <div>
@@ -114,11 +143,13 @@ function MyWork(props) {
                             <p>This Portfolio made using React>js Sass, Framer Motion & React Observer.</p>
                         </div>
                         <div className="MyWork__btn">
+                            <a href="https://github.com/Yarinvanzikri/portfolio">
+                                <button>
+                                    GITHUB - PORTFOLIO
+                                </button>
+                            </a>
                             <button>
-                                GITHUB
-                            </button>
-                            <button>
-                                DEMO
+                                THIS IS THE DEMO :)
                             </button>
                         </div>
                     </div>

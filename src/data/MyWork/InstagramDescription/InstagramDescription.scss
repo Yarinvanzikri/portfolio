@@ -1,0 +1,53 @@
+.InstagramDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  background: linear-gradient(0deg, #8c94d9, #22538c, #2e5f8d, #c5b974, #eed759, #05f5ff);
+  box-shadow: inset 150px 10px 300px 20px rgba(23, 10, 0, 0.68);
+  width: 100vw;
+  height: 100vh;
+
+
+  &__text {
+    position: absolute;
+    padding: 10px;
+    font-size: 2vh;
+    color: #c70d89;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    z-index: 5;
+    h1 {
+      text-align: center;
+      font-size: 6.5vh;
+    }
+    p {
+      color: #2b88f5;
+      font-size: 4vh;
+      text-align: left;
+    }
+    li {
+      list-style: none;
+    }
+
+  }
+
+  .goBackShip {
+    position : absolute;
+    bottom : 20vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Thanks {
+    gap: 1vw 1vw;
+    &__Titles{
+      h1 {
+        font-size: 3.7vh;
+      }
+      p {
+        text-align: center;
+        font-size: 3vh;
+      }
+    }
+  }
+
+}
