@@ -97,9 +97,9 @@ function MyWork(props) {
                         <div>
                             <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
                         </div>
-                        <div>
+                        <div className="MyWork__btn">
                             <button>
-                                GITHUBh
+                                GITHUB
                             </button>
                             <button>
                                 DEMO
@@ -113,7 +113,7 @@ function MyWork(props) {
                         <div>
                             <p>This Portfolio made using React>js Sass, Framer Motion & React Observer.</p>
                         </div>
-                        <div>
+                        <div className="MyWork__btn">
                             <button>
                                 GITHUB
                             </button>

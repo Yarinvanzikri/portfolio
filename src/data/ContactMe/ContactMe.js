@@ -118,20 +118,21 @@ function ContactMe(props) {
                             <input type='text'
                                    name='name'
                                    placeholder='Full name*'
+                                   autoComplete="off"
                             />
                         </div>
                         <div>
                             <input type='email' name="email" required
                                    placeholder='Email*'
+                                   autoComplete="off"
                             />
                         </div>
                         <div>
-                            <input type='text'
-                                   name='content'
-                                   placeholder='Write Here'
+                            <textarea name="content"
+                                      placeholder='Write Here'
+                                      autoComplete="off"
                             />
                         </div>
-
                     </div>
                     <div className='ContactMe__btn'>
                         <button type='submit'>Submit</button>
@@ -141,12 +142,12 @@ function ContactMe(props) {
             </motion.div>
             <motion.div
                 animate={controlShip3}>
-                <SpaceShip />
+                <SpaceShip/>
             </motion.div>
 
             <motion.div
                 animate={controlClouds}>
-                <Clouds />
+                <Clouds/>
             </motion.div>
         </div>
 
