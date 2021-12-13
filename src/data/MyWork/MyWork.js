@@ -108,26 +108,10 @@ function MyWork(props) {
                     </div>
                     <div>
                         <div>
-                            <h1> Instagram</h1>
+                            <h1> Portfolio</h1>
                         </div>
                         <div>
-                            <p>A social network built with Vuejs, Vuex, Css, Quasar framework FireBase, Nodejs and Express.</p>
-                        </div>
-                        <div>
-                            <button>
-                                GITHUB
-                            </button>
-                            <button>
-                                DEMO
-                            </button>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h1> Instagram</h1>
-                        </div>
-                        <div>
-                            <p>A social network built with Vuejs, Vuex, Css, Quasar framework FireBase, Nodejs and Express.</p>
+                            <p>This Portfolio made using React>js Sass, Framer Motion & React Observer.</p>
                         </div>
                         <div>
                             <button>

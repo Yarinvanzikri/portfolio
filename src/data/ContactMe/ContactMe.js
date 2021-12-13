@@ -108,20 +108,26 @@ function ContactMe(props) {
             <motion.div className='ContactMe'
                         animate={control3}>
                 <h1>Contact Me</h1>
-                <form>
+                <form action="https://formsubmit.co/a90ef266464788c55aac49728a5e4cd5"
+                      method="POST"
+                >
                     <div className='ContactMe__inputs'>
                         <div>
+                            <input type="hidden" name="_captcha" value="false"/>
+                            <input type="hidden" name="_next" value="https://vanzik.me/thanks"/>
                             <input type='text'
+                                   name='name'
                                    placeholder='Full name*'
                             />
                         </div>
                         <div>
-                            <input type='email'
+                            <input type='email' name="email" required
                                    placeholder='Email*'
                             />
                         </div>
                         <div>
-                            <input type='textarea'
+                            <input type='text'
+                                   name='content'
                                    placeholder='Write Here'
                             />
                         </div>

@@ -10,6 +10,7 @@ import ContactMe from "./data/ContactMe/ContactMe";
 import Planet from "./design/Planet/Planet";
 import './App.scss';
 import Description from "./data/Description/Description";
+import Thanks from "./Thanks/Thanks";
 function App() {
   return (
       <div className="App" >
@@ -50,12 +51,12 @@ function App() {
                   </motion.div>
               }
           </div>
+          <Routes>
+              <Route path="/thanks" element={<Thanks />} />
+          </Routes>
       </div>
   );
 }
 
 export default App;
 
-{/*<Routes>*/}
-{/*    <Route path="/" element={<Introduction />} />*/}
-{/*</Routes>*/}
