@@ -145,7 +145,7 @@ function MyWork(props) {
                         <div className="MyWork__btn">
                             <a href="https://github.com/Yarinvanzikri/portfolio">
                                 <button>
-                                    GITHUB - PORTFOLIO
+                                    GITHUB
                                 </button>
                             </a>
                             <button>
