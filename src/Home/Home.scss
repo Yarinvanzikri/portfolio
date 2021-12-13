@@ -1,0 +1,23 @@
+.Home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  &__mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(127deg, #dedede, #000000, #0e4a88, #670449, #4d0738, #092749, #061117, #030d0b );
+    box-shadow: inset 150px 10px 5000px 250px rgba(22, 1, 24, 0.88);
+    width: 100vw;
+    height: 300vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Home__mainHeader {
+    background: linear-gradient(127deg, #dedede, #000000, #0e4a88, #670449, #4d0738, #092749, #061117,#dedede, #dedede );
+    box-shadow: inset 20px 10px 200px 100px rgba(22, 1, 24, 0.88);
+  }
+}

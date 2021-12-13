@@ -1,4 +1,46 @@
 .Thanks {
-  background: linear-gradient(127deg, #dedede, #000000, #0e4a88, #670449, #4d0738, #092749, #061117, #030d0b );
-  box-shadow: inset 150px 10px 5000px 250px rgba(22, 1, 24, 0.88);
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+  flex-direction: column;
+  background: linear-gradient(180deg, #082544, #125498, #438ad0, #c5b974, #eed759, #05f5ff);
+  box-shadow: inset 150px 10px 300px 20px rgba(23, 10, 0, 0.68);
+  width: 100vw;
+  height: 100vh;
+
+
+  &__Titles {
+    position: absolute;
+    padding: 10px;
+    font-size: 2vh;
+    color: #c70d89;
+    text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+    z-index: 5;
+    h1 {
+      text-align: center;
+      font-size: 6.5vh;
+
+    }
+    h3 {
+      text-align: center;
+      font-size: 3.5vh;
+    }
+
+  }
+
+}
+@media screen and (max-width: 600px) {
+  .Thanks {
+    gap: 1vw 1vw;
+    &__Titles{
+      h1 {
+        font-size: 3.7vh;
+      }
+      h3 {
+        text-align: center;
+        font-size: 3vh;
+      }
+    }
+  }
+
 }
