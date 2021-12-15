@@ -15,7 +15,7 @@ function InstagramDescription() {
                     So the features i have implanted at this project were :
                         <ul>
                             <li>
-                                authentication system with jwp.<br/>
+                                authentication system with jwt.<br/>
                                 the authentication is a middleware which determines what parts of the website you can use.
                             </li>
                             <li>
