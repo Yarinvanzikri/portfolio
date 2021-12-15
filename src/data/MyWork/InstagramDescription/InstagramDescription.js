@@ -12,7 +12,7 @@ function InstagramDescription() {
                 <p>
                    This project Was The Final Project At the Netcraft Academy Full Stack Course .<br />
                     i Choose to go with basic design and to be more focused on the functionality.
-                    So the features i have implanted at this project ware :
+                    So the features i have implanted at this project were :
                         <ul>
                             <li>
                                 authentication system with jwp.<br/>

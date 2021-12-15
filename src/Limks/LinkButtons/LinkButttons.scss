@@ -1,0 +1,134 @@
+.LinkButtons {
+  position: absolute;
+  bottom: 20vh;
+  z-index: 9;
+  left: 0;
+  width: 100vw;
+
+  .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .leftButtons {
+      display: flex;
+    }
+    .rightButtons {
+      display: flex;
+    }
+  }
+}
+
+.buttonHalo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  background: transparent;
+  margin: 5vh;
+
+  a{
+    padding: 3.5vh 3.5vh;
+  }
+
+  .buttonLogo {
+    color: white;
+  }
+}
+.facebook {
+  border: 8px solid rgb(66, 103, 178);
+
+  .facebookIcon {
+    color: rgb(256,256,256)
+  }
+}
+  .facebook:hover {
+    border: 3px dotted rgb(256,256,256);
+    box-shadow: inset 0 0 25px rgb(256,256,256);
+    transition: all 0.5s ease;
+    .facebookIcon {
+      color: rgb(66, 103, 178);
+      text-shadow: 0 0 15px rgb(66, 103, 178);
+      transition: all 0.5s ease;
+    }
+
+  }
+.github{
+  border: 8px solid rgb(201, 81, 12);
+  .githubIcon {
+    color: rgb(256,256,256)
+  }
+}
+.github:hover {
+  border: 3px dotted rgb(201, 81, 12);
+  box-shadow: inset 0 0 25px rgb(201, 81, 12);
+  transition: all 0.5s ease;
+  .githubIcon {
+    color: rgb(201, 81, 12);
+    text-shadow: 0 0 15px rgb(201, 81, 12);
+    transition: all 0.5s ease;
+  }
+
+}
+.linkedin{
+  border: 8px solid rgb(256,256,256);
+  .linkedinIcon {
+    color: rgb(68, 131, 197)
+  }
+}
+.linkedin:hover {
+  border: 3px dotted rgb(66, 103, 178);
+  box-shadow: inset 0 0 25px rgb(66, 103, 178);
+  transition: all 0.5s ease;
+  .linkedinIcon {
+    color: rgb(256,256,256);
+    text-shadow: 0 0 15px rgb(66, 103, 178);
+    transition: all 0.5s ease;
+  }
+}
+.whatsapp{
+  border: 8px solid rgb(37,211,102);
+  .whatsappIcon {
+    color: rgb(256,256,256)
+  }
+}
+.whatsapp:hover {
+  border: 3px dotted rgb(37,211,102);
+  box-shadow: inset 0 0 25px rgb(37,211,102);
+  transition: all 500ms ease;
+  .whatsappIcon {
+    color: rgb(37,211,102);
+    text-shadow: 0 0 15px rgb(37,211,102);
+    transition: all 0.5s ease;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .buttonsContainer {
+
+    .leftButtons {
+      margin: 0 0 ;
+      flex-direction: column;
+    }
+    .rightButtons {
+      margin: 0 0 ;
+      flex-direction: column;
+    }
+  }
+
+  .buttonHalo {
+    width: 7vh;
+    height: 7vh;
+    margin-top: 1vw;
+
+
+    a {
+      padding: 3vh 3vh;
+    }
+
+  }
+}

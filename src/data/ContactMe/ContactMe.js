@@ -137,14 +137,12 @@ function ContactMe(props) {
                     <div className='ContactMe__btn'>
                         <button type='submit'>Submit</button>
                     </div>
-
                 </form>
             </motion.div>
             <motion.div
                 animate={controlShip3}>
                 <SpaceShip/>
             </motion.div>
-
             <motion.div
                 animate={controlClouds}>
                 <Clouds/>

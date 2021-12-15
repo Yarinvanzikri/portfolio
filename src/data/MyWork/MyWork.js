@@ -99,12 +99,12 @@ function MyWork(props) {
                             <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
                         </div>
                         <div className="MyWork__btn">
-                            <a href='https://github.com/Yarinvanzikri/instagram-ui'>
+                            <a href='https://github.com/Yarinvanzikri/instagram-ui' target={"_blank"}>
                                 <button>
                                     GITHUB - UI
                                 </button>
                             </a>
-                            <a href="https://github.com/Yarinvanzikri/instagram-api">
+                            <a href="https://github.com/Yarinvanzikri/instagram-api" target={"_blank"}>
                                 <button>
                                     GITHUB - API
                                 </button>
@@ -120,14 +120,12 @@ function MyWork(props) {
                             <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
                         </div>
                         <div className="MyWork__btn">
-                            <a href="https://radiant-retreat-03616.herokuapp.com/">
-                                <Link to='/instagram/info'>
+                                <Link to='/instagram/info' target={"_blank"} >
                                     <button>
                                         Description
                                     </button>
                                 </Link>
-                            </a>
-                            <a href="https://radiant-retreat-03616.herokuapp.com/">
+                            <a href="https://radiant-retreat-03616.herokuapp.com/" target={"_blank"} >
                                 <button>
                                     DEMO
                                 </button>
@@ -143,7 +141,7 @@ function MyWork(props) {
                             <p>This Portfolio made using React>js Sass, Framer Motion & React Observer.</p>
                         </div>
                         <div className="MyWork__btn">
-                            <a href="https://github.com/Yarinvanzikri/portfolio">
+                            <a href="https://github.com/Yarinvanzikri/portfolio" target={"_blank"} >
                                 <button>
                                     GITHUB
                                 </button>

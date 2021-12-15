@@ -9,7 +9,7 @@ import {motion} from "framer-motion";
 import SpaceShip from "../design/SpaceShip/SpaceShip";
 import Planet from "../design/Planet/Planet";
 import './Home.scss'
-
+import LInkButtons from "../Limks/LinkButtons/LInkButtons";
 function Home() {
     return (
         <div className="Home" >
@@ -49,6 +49,9 @@ function Home() {
                         <Planet/>
                     </motion.div>
                 }
+                <div>
+                    <LInkButtons />
+                </div>
             </div>
         </div>
     );
