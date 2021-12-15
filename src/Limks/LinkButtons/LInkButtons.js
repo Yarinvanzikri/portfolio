@@ -22,7 +22,7 @@ function LInkButtons(props) {
                     </div>
                     <div className={"github  buttonHalo"}>
                         <div className={'buttonLogo'}>
-                            <a href={"https://github.com/Yarinvanzikri"} target={'_blank'}>
+                            <a href={"https://www.github.com/Yarinvanzikri"} target={'_blank'}>
                                 <FontAwesomeIcon icon={faGithub} size='2x' className={"githubIcon"} />
                             </a>
                         </div>
@@ -38,7 +38,7 @@ function LInkButtons(props) {
                     </div>
                     <div className={"whatsapp buttonHalo"}>
                         <div className={'buttonLogo'}>
-                            <a href={"https://wa.me/972507185485"} target={"_blank"}>
+                            <a href={"https://www.wa.me/972507185485"} target={"_blank"}>
                                 <FontAwesomeIcon icon={faWhatsapp} size='2x' className={"whatsappIcon"}/>
                             </a>
                         </div>
