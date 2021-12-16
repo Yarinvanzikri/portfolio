@@ -8,11 +8,11 @@
 
 .ResumeBtn {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 7.5vh;
-  height: 7.5vh;
+  width: 9vh;
+  height: 9vh;
   border-radius: 50%;
   background: transparent;
 
@@ -44,10 +44,15 @@ h3{
 }
 @media screen and (max-width: 600px) {
   .Resume {
-    left: 41vw;
+    left: 38vw;
 
     h3 {
       color: #dedede;
+
     }
+  }
+  .ResumeBtn {
+    width: 11vh;
+    height: 11vh;
   }
 }

@@ -8,15 +8,15 @@ function Resume() {
     return (
         <div className={"Resume"}>
             <div>
-                <a href={ResumeYarin} download={'YarinBenZikri-Resume'}>
-                    <div className={"resume ResumeBtn"}>
+                <div className={"resume ResumeBtn"}>
+                    <a href={ResumeYarin} download={'YarinBenZikri-Resume'}>
                         <div className={'buttonLogo'}>
                             <FontAwesomeIcon icon={faFileDownload} size='2x' className={'resumeIcon'} />
                         </div>
-                    </div>
-                </a>
+                    </a>
+                    <h3>Resume</h3>
+                </div>
             </div>
-            <h3>Resume</h3>
          </div>
 
     );
