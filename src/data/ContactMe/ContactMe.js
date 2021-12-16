@@ -114,7 +114,7 @@ function ContactMe(props) {
                     <div className='ContactMe__inputs'>
                         <div>
                             <input type="hidden" name="_captcha" value="false"/>
-                            <input type="hidden" name="_next" value="https://vanzik.me/thanks"/>
+                            <input type="hidden" name="_next" value="https://YarinBenZikri.me/thanks"/>
                             <input type='text'
                                    name='name'
                                    placeholder='Full name*'

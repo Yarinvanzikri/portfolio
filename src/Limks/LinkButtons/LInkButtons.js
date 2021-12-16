@@ -13,38 +13,37 @@ function LInkButtons(props) {
         <div className={"LinkButtons"}>
             <div className={"buttonsContainer"}>
                 <div className={'leftButtons'}>
-                    <div className={"facebook buttonHalo"}>
-                        <div className={'buttonLogo'}>
-                            <a href={'https://www.facebook.com/yarinbz'} target={'_blank'}>
+                    <a href={'https://www.facebook.com/yarinbz'} target={'_blank'}>
+                        <div className={"facebook buttonHalo"}>
+                            <div className={'buttonLogo'}>
                                 <FontAwesomeIcon icon={faFacebookF} size='2x' className={'facebookIcon'} />
-                            </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className={"github  buttonHalo"}>
-                        <div className={'buttonLogo'}>
-                            <a href={"https://www.github.com/Yarinvanzikri"} target={'_blank'}>
+                    </a>
+                    <a href={"https://www.github.com/Yarinvanzikri"} target={'_blank'}>
+                        <div className={"github  buttonHalo"}>
+                            <div className={'buttonLogo'}>
                                 <FontAwesomeIcon icon={faGithub} size='2x' className={"githubIcon"} />
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div className={'rightButtons'}>
-                    <div className={"linkedin buttonHalo"}>
-                        <div className={'buttonLogo'}>
-                            <a href={"https://www.linkedin.com/in/yarin-ben-zikri-8989aa22/"} target={"_blank"}>
+                    <a href={"https://www.linkedin.com/in/yarin-ben-zikri-8989aa22/"} target={"_blank"}>
+                        <div className={"linkedin buttonHalo"}>
+                            <div className={'buttonLogo'}>
                                 <FontAwesomeIcon icon={faLinkedinIn} size='2x' className={"linkedinIcon"}/>
-                            </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className={"whatsapp buttonHalo"}>
-                        <div className={'buttonLogo'}>
-                            <a href={"https://wa.me/972507185485"} target={"_blank"}>
+                    </a>
+                    <a href={"https://wa.me/972507185485"} target={"_blank"}>
+                        <div className={"whatsapp buttonHalo"}>
+                            <div className={'buttonLogo'}>
                                 <FontAwesomeIcon icon={faWhatsapp} size='2x' className={"whatsappIcon"}/>
-                            </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-
             </div>
         </div>
     );
