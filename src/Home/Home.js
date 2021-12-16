@@ -10,6 +10,7 @@ import SpaceShip from "../design/SpaceShip/SpaceShip";
 import Planet from "../design/Planet/Planet";
 import './Home.scss'
 import LInkButtons from "../Limks/LinkButtons/LInkButtons";
+import Resume from "../Limks/Resume/Resume";
 function Home() {
     return (
         <div className="Home" >
@@ -51,6 +52,9 @@ function Home() {
                 }
                 <div>
                     <LInkButtons />
+                </div>
+                <div>
+                    <Resume />
                 </div>
             </div>
         </div>

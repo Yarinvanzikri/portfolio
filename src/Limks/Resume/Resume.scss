@@ -1,0 +1,53 @@
+.Resume {
+  position: absolute;
+  bottom: 1vh;
+  left: 47vw;
+  z-index: 10;
+  width: 100%;;
+}
+
+.ResumeBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 7.5vh;
+  height: 7.5vh;
+  border-radius: 50%;
+  background: transparent;
+
+
+  .ResumeLogo {
+    color:  rgb(250,250,250);
+  }
+}
+.resume {
+  border: 8px solid rgb(199, 13, 137);
+
+  .resumeIcon {
+    color: rgb(14, 74, 136);
+  }
+}
+.resume:hover {
+  border: 3px dotted rgb(14, 74, 136);
+  box-shadow: inset 0 0 25px rgb(199, 13, 137);
+  transition: all 0.5s ease;
+  .resumeIcon {
+    color: rgb(199, 13, 137);
+    text-shadow: 0 0 15px rgb(199, 13, 137);
+    transition: all 0.5s ease;
+  }
+
+}
+h3{
+  color: #afafaf;
+}
+@media screen and (max-width: 600px) {
+  .Resume {
+    left: 41vw;
+
+    h3 {
+      color: #dedede;
+    }
+  }
+}

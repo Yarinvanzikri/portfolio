@@ -23,7 +23,7 @@ function MyWork(props) {
                 control2.start({
                     x: '-42.5vw',
                     transition: {
-                        type: 'spring', duration: 1.5, bounce: 0.3
+                        type: 'spring', duration: 1.5, bounce: 0.2
                     }
 
                 });
@@ -55,7 +55,7 @@ function MyWork(props) {
                 control2.start({
                     x: '-30.5vw',
                     transition: {
-                        type: 'spring', duration: 3, bounce: 0.3
+                        type: 'spring', duration: 3, bounce: 0.2
                     }
                 });
                 controlShip2.start({

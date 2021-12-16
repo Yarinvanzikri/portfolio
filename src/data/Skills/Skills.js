@@ -23,7 +23,7 @@ function Skills() {
                 control.start({
                     x: '-42.5vw',
                     transition: {
-                        type: 'spring', duration: 1.5, bounce: 0.3
+                        type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
                 controlShip.start({
@@ -51,7 +51,7 @@ function Skills() {
                 control.start({
                     x: '-25.5vw',
                     transition: {
-                        type: 'spring', duration: 1.5, bounce: 0.3
+                        type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
                 controlShip.start({

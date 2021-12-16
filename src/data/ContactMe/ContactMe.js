@@ -23,7 +23,7 @@ function ContactMe(props) {
                 control3.start({
                     x: '-42.5vw',
                     transition: {
-                        type: 'spring', duration: 1.5, bounce: 0.3
+                        type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
                 controlShip3.start({
@@ -65,7 +65,7 @@ function ContactMe(props) {
                 control3.start({
                     x: '-35.5vw',
                     transition: {
-                        type: 'spring', duration: 5, bounce: 0.3
+                        type: 'spring', duration: 5, bounce: 0.2
                     }
                 });
                 controlShip3.start({
