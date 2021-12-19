@@ -24,3 +24,35 @@ html, body, #root {
   font-family: "Iceland-Regular";
   src: url("assets/Iceland/Iceland-Regular.ttf") format("truetype");
 }
+
+::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #1669be;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1669be;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #1669be;
+}
+::-webkit-scrollbar-track {
+  background: #940869;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #940869;
+}
+::-webkit-scrollbar-track:active {
+  background: #940869;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

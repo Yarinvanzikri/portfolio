@@ -2,82 +2,82 @@ import React, {useEffect} from 'react';
 import { motion, useAnimation } from "framer-motion"
 import {useInView} from'react-intersection-observer'
 import './Description.scss'
-import SpaceShip from "../../design/SpaceShip/SpaceShip";
 function Description() {
 
-    const {ref, inView, entry} = useInView({
-        threshold: 1,
+    const observer = useInView({
+        threshold: 0.1,
         triggerOnce: true
     });
-    console.log('Skills entry: ', entry)
-    console.log('Skills inView: ', inView)
+    console.log('Skills entry: ', observer.entry)
+    console.log('Skills inView: ', observer.inView)
+    console.log(window.scrollY)
 
     const control0 = useAnimation();
     const controlShip0 = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook,  skills inView =", inView);
+        console. log ("use effect hook,  skills inView =", observer.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
-            if (inView){
+            if (observer.inView){
                 control0.start({
                     x: '-42.5vw',
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
-                // controlShip0.start({
-                //     x: '-100vw',
-                //     y: '-30vh',
-                //     rotate: 180,
-                //     transition: {
-                //         scale: 0.9, duration: 4
-                //     }
-                // });
+                controlShip0.start({
+                    x: '-100vw',
+                    y: '-30vh',
+                    rotate: 180,
+                    transition: {
+                        scale: 0.9, duration: 4
+                    }
+                });
             }
-            if (!inView){
+            if (!observer.inView){
                 control0.start({x: '150vw' })
-                // controlShip0.start({
-                //     x: '100vw',
-                //     y: "-30vh",
-                //     rotate: 200,
-                //     duration: 4,
-                //     scale: 0.3,
-                // });
+                controlShip0.start({
+                    x: '100vw',
+                    y: "-30vh",
+                    rotate: 200,
+                    duration: 4,
+                    scale: 0.3,
+                });
             }
         } else {
             //-------Desktop Animation ---------
-            if (inView) {
+            if (observer.inView) {
                 control0.start({
                     x: '-25.5vw',
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
-                // controlShip0.start({
-                //     x: '-100vw',
-                //     y: '-50vh',
-                //     rotate: 180,
-                //     transition: {
-                //         scale: 0.9, duration: 4
-                //     }
-                // });
+                controlShip0.start({
+                    x: '-100vw',
+                    y: '-50vh',
+                    rotate: 180,
+                    transition: {
+                        scale: 0.9, duration: 4
+                    }
+                });
             }
-            if (!inView) {
+            if (!observer.inView) {
                 control0.start({x: '150vw'})
-                // controlShip0.start({
-                //     x: '100vw',
-                //     y: "-50vh",
-                //     rotate: 200,
-                //     duration: 4,
-                //     scale: 0.3,
-                // });
+                controlShip0.start({
+                    x: '100vw',
+                    y: "-50vh",
+                    rotate: 200,
+                    duration: 4,
+                    scale: 0.3,
+                });
             }
         }
-         }, [inView]);
+         }, [observer.inView, observer.ref]);
 
 
-    return (<div ref={ref}>
+    return (<div ref={observer.ref}>
         <motion.div className={"Description"}
                             animate={control0}>
             <div className="aboutMe">

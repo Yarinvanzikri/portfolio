@@ -6,20 +6,20 @@ import SpaceShip from "../../design/SpaceShip/SpaceShip";
 import {Link} from "react-router-dom";
 function MyWork(props) {
 
-    const {ref, inView, entry} = useInView({
-        threshold: 0.8,
+    const observer2 = useInView({
+        threshold: 0.6,
         triggerOnce: true
     });
-    console.log('what??!?!!!: ', useInView())
-    console.log('MyWork entry: ', entry)
+    console.log('MyWork entry: ', observer2.entry)
+    console.log(window.scrollY)
     const control2 = useAnimation();
     const controlShip2 = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook, myWork inView =", inView);
+        console. log ("use effect hook, myWork inView =", observer2.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
-            if (inView){
+            if (observer2.inView){
                 control2.start({
                     x: '-42.5vw',
                     transition: {
@@ -38,7 +38,7 @@ function MyWork(props) {
                     }
                 });
             }
-            if (!inView){
+            if (!observer2.inView){
                 control2.start({x: '-150vw' })
                 controlShip2.start({
                     x: '-100vw',
@@ -51,7 +51,7 @@ function MyWork(props) {
 
         } else {
             //-------Desktop Animation ---------
-            if (inView){
+            if (observer2.inView){
                 control2.start({
                     x: '-30.5vw',
                     transition: {
@@ -68,7 +68,7 @@ function MyWork(props) {
                     }
                 })
             }
-            if (!inView){
+            if (!observer2.inView){
                 control2.start({x: '150vw' })
                 controlShip2.start({
                     x: '-100vw',
@@ -80,11 +80,11 @@ function MyWork(props) {
             }
         }
 
-    }, [inView]);
+    }, [observer2.inView, observer2.ref]);
 
 
     return (
-        <div className={'myWork-spacer'} ref={ref} >
+        <div className={'myWork-spacer'} ref={observer2.ref} >
             <motion.div className="MyWork"
                         animate={control2}>
                 <div className='projects'>

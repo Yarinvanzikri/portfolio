@@ -5,21 +5,22 @@ import './Skills.scss'
 import SpaceShip from "../../design/SpaceShip/SpaceShip";
 function Skills() {
 
-    const {ref, inView, entry} = useInView({
-        threshold: 1,
+    const observer1 = useInView({
+        threshold: 0.3,
         triggerOnce: true
     });
-    console.log('Skills entry: ', entry)
-    console.log('Skills inView: ', inView)
+    console.log('Skills entry: ', observer1.entry)
+    console.log('Skills inView: ', observer1.inView)
+    console.log(window.scrollY)
 
     const control = useAnimation();
     const controlShip = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook,  skills inView =", inView);
+        console. log ("use effect hook,  skills inView =", observer1.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
-            if (inView){
+            if (observer1.inView){
                 control.start({
                     x: '-42.5vw',
                     transition: {
@@ -35,7 +36,7 @@ function Skills() {
                     }
                 });
             }
-            if (!inView){
+            if (!observer1.inView){
                 control.start({x: '-150vw' })
                 controlShip.start({
                     x: '100vw',
@@ -47,7 +48,7 @@ function Skills() {
             }
         } else {
             //-------Desktop Animation ---------
-            if (inView) {
+            if (observer1.inView) {
                 control.start({
                     x: '-25.5vw',
                     transition: {
@@ -63,7 +64,7 @@ function Skills() {
                     }
                 });
             }
-            if (!inView) {
+            if (!observer1.inView) {
                 control.start({x: '-150vw'})
                 controlShip.start({
                     x: '100vw',
@@ -73,9 +74,9 @@ function Skills() {
                     scale: 0.3,
                 });
             }
-        } }, [inView]);
+        } }, [observer1.inView, observer1.ref]);
 
-    return (<div ref={ref}>
+    return (<div ref={observer1.ref}>
             <motion.div className='Skills'
                         animate={control}>
                 <div className="mySkills">

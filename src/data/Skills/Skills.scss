@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding: 20px;
   top: 115vh;
-  pointer-events: none;
+  z-index: 9;
   .node{
     border-radius:3px;
     width:80%;

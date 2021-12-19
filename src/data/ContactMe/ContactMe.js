@@ -6,20 +6,21 @@ import SpaceShip from "../../design/SpaceShip/SpaceShip";
 import Clouds from "../../design/Clouds/Clouds";
 function ContactMe(props) {
 
-    const {ref, inView, entry} = useInView({
+    const observer3 = useInView({
         threshold: 0.9,
         triggerOnce: true
     });
-    console.log('ContactMe entry: ', entry)
+    console.log('ContactMe entry: ', observer3.entry)
+    console.log(window.scrollY)
     const control3 = useAnimation();
     const controlShip3 = useAnimation();
     const controlClouds = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook,  contactMe inView =", inView);
+        console. log ("use effect hook,  contactMe inView =", observer3.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
-            if (inView){
+            if (observer3.inView){
                 control3.start({
                     x: '-42.5vw',
                     transition: {
@@ -44,7 +45,7 @@ function ContactMe(props) {
 
                 });
             }
-            if (!inView){
+            if (!observer3.inView){
                 control3.start({x: '-150vw' })
                 controlShip3.start({
                     x: '100vw',
@@ -61,7 +62,7 @@ function ContactMe(props) {
 
         } else {
             //-------Desktop Animation ---------
-            if (inView) {
+            if (observer3.inView) {
                 control3.start({
                     x: '-35.5vw',
                     transition: {
@@ -85,7 +86,7 @@ function ContactMe(props) {
                     }
                 });
             }
-            if (!inView) {
+            if (!observer3.inView) {
                 control3.start({x: '-150vw'});
                 controlShip3.start({
                     x: '100vw',
@@ -100,11 +101,11 @@ function ContactMe(props) {
                 })
             }
         }
-    }, [inView]);
+    }, [observer3.inView, observer3.ref]);
 
 
     return (
-        <div className={'contact-spacer'} ref={ref}>
+        <div  ref={observer3.ref}>
             <motion.div className='ContactMe'
                         animate={control3}>
                 <h1>Contact Me</h1>
