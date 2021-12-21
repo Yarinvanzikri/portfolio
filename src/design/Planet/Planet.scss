@@ -10,9 +10,12 @@ $fuscia : #f9026d;
 $meteor-yellow: #fedc01;
 
 .Planet {
-  position: absolute;
-  top: 4vh;
-  right: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
 
 }
 .planet-container {
@@ -21,8 +24,6 @@ $meteor-yellow: #fedc01;
   padding:20px;
   border-radius:200px;
   background: (linear-gradient(150deg, $fuscia, transparent ,transparent,transparent));
-  position: absolute;
-  left: 42%;
   box-shadow: 10px 10px 500px 180px rgba(0, 0, 0, 0.4);
   animation: shadowAnima ease-in-out  30s infinite;
   animation-delay: 6.5s;

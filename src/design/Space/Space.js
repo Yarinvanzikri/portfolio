@@ -24,22 +24,22 @@ return (
             <Meteor/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
+            <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
+            <Star size={randomSize()+2} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+2} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+2} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+3} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+3} duration={randomDuration()+10000} name={'glowBig'}/>
+            <Star size={randomSize()+3} duration={randomDuration()+10000} name={'glowBig'}/>
+            <Star size={randomSize()+4} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+4} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+4} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+5} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+5} duration={randomDuration()+10000} name={'glowBig'}/>
+            <Star size={randomSize()+5} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+6} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+6} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+7} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+7} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+8} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+8} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+9} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+9} duration={randomDuration()+10000} name={'glowBig'}/>
+            <Star size={randomSize()+6} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+10} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+15} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
@@ -322,111 +322,6 @@ return (
             <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
             <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
             <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-            <Star size={randomSize()} duration={randomDuration()} name={'glow'}/>
-
-
-
-
-
-
 
         </div>
     );

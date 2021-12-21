@@ -2,15 +2,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  &__mainHeader {
+
+  .animationsContainer{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__mainHeader {
+    padding-top: 38vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background: linear-gradient(127deg, #dedede, #000000, #0e4a88, #670449, #4d0738, #092749, #061117, #030d0b );
     box-shadow: inset 150px 10px 5000px 250px rgba(22, 1, 24, 0.88);
     width: 100vw;
     height: 300vh;
     overflow: hidden;
+    gap:10vh 5vw;
   }
 }
 
@@ -18,5 +28,8 @@
   .Home__mainHeader {
     background: linear-gradient(127deg, #dedede, #000000, #0e4a88, #670449, #4d0738, #092749, #061117,#dedede, #dedede );
     box-shadow: inset 20px 10px 200px 100px rgba(22, 1, 24, 0.88);
+    gap:15vh 5vw;
+    padding-top: 20vh;
+    height: 400vh;
   }
 }

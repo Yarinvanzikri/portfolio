@@ -22,19 +22,19 @@
   }
 }
 .resume {
-  border: 8px solid rgb(199, 13, 137);
+  border: 8px solid rgb(49, 134, 21);
 
   .resumeIcon {
-    color: rgb(14, 74, 136);
+    color: rgb(84, 148, 220);
   }
 }
 .resume:hover {
-  border: 3px dotted rgb(14, 74, 136);
-  box-shadow: inset 0 0 25px rgb(199, 13, 137);
+  border: 3px dotted rgb(250, 250, 250);
+  box-shadow: inset 0 0 25px rgb(67, 176, 31);
   transition: all 0.5s ease;
   .resumeIcon {
-    color: rgb(199, 13, 137);
-    text-shadow: 0 0 15px rgb(199, 13, 137);
+    color: rgb(153, 241, 124);
+    text-shadow: 0 0 15px rgb(75, 162, 46);
     transition: all 0.5s ease;
   }
 

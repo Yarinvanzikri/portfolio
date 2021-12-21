@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 function MyWork(props) {
 
     const observer2 = useInView({
-        threshold: 0.6,
+        threshold: 0.9,
         triggerOnce: true
     });
     console.log('MyWork entry: ', observer2.entry)
@@ -21,28 +21,28 @@ function MyWork(props) {
         if(window.innerWidth <= 600) {
             if (observer2.inView){
                 control2.start({
-                    x: '-42.5vw',
+                    x: 0,
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.2
                     }
 
                 });
                 controlShip2.start({
-                    x: '100vw',
-                    y: '35vh',
+                    x: '110vw',
+                    y: '-68vh',
                     rotate: 0,
-                    scale: 0.7,
+                    scale: 0.5,
                     transition: {
-                         duration: 5,
-                        delay: 1.5
+                         duration: 4,
+                        delay: 0.5
                     }
                 });
             }
             if (!observer2.inView){
-                control2.start({x: '-150vw' })
+                control2.start({x: '100vw' })
                 controlShip2.start({
                     x: '-100vw',
-                    y: "35vh",
+                    y: "-70vh",
                     rotate: 20,
                     duration: 5,
                     scale: 0.3,
@@ -53,26 +53,26 @@ function MyWork(props) {
             //-------Desktop Animation ---------
             if (observer2.inView){
                 control2.start({
-                    x: '-30.5vw',
+                    x: 0,
                     transition: {
                         type: 'spring', duration: 3, bounce: 0.2
                     }
                 });
                 controlShip2.start({
-                    x: '100vw',
-                    y: 0,
+                    x: '110vw',
+                    y: '25vh',
                     rotate: 0,
-                    scale: 1,
+                    scale: 0.8,
                     transition: {
-                        duration: 8, delay: 1.5
+                        duration: 6, delay: 1
                     }
                 })
             }
             if (!observer2.inView){
-                control2.start({x: '150vw' })
+                control2.start({x: '100vw' })
                 controlShip2.start({
-                    x: '-100vw',
-                    y: 0,
+                    x: '-110vw',
+                    y: '13vh',
                     rotate: 20,
                     duration: 4,
                     scale: 0.3,
@@ -84,8 +84,9 @@ function MyWork(props) {
 
 
     return (
-        <div className={'myWork-spacer'} ref={observer2.ref} >
-            <motion.div className="MyWork"
+        <div  ref={observer2.ref} className="MyWork_main">
+            <motion.div
+                className="MyWork"
                         animate={control2}>
                 <div className='projects'>
                     <div>
@@ -147,7 +148,7 @@ function MyWork(props) {
                                 </button>
                             </a>
                             <button>
-                                THIS IS THE DEMO :)
+                                THIS IS THE DEMO
                             </button>
                         </div>
                     </div>

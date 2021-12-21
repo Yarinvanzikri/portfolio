@@ -11,8 +11,8 @@ function Logo(props) {
             <div className={'mainHeader'}>
                 <h1>Yarin Ben - Zikri</h1>
             </div>
-            <div className={'secondaryHeader'}>
-                <h3>Full - Stack Developer</h3>
+            <div className={'secondaryHeader'} >
+                <h3 style={{color: "#2276cc"}}>Full - Stack Developer</h3>
             </div>
         </div>
     );

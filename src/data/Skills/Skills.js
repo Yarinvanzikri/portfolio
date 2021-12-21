@@ -6,7 +6,7 @@ import SpaceShip from "../../design/SpaceShip/SpaceShip";
 function Skills() {
 
     const observer1 = useInView({
-        threshold: 0.3,
+        threshold: 0.9,
         triggerOnce: true
     });
     console.log('Skills entry: ', observer1.entry)
@@ -22,27 +22,27 @@ function Skills() {
         if(window.innerWidth <= 600) {
             if (observer1.inView){
                 control.start({
-                    x: '-42.5vw',
+                    x: '0',
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
                 controlShip.start({
-                    x: '-100vw',
+                    x: '-110vw',
                     y: '-30vh',
                     rotate: 180,
                     transition: {
-                        scale: 0.9, duration: 4
+                        scale: 0.9, duration: 3
                     }
                 });
             }
             if (!observer1.inView){
-                control.start({x: '-150vw' })
+                control.start({x: '-100vw' })
                 controlShip.start({
-                    x: '100vw',
+                    x: '110vw',
                     y: "-30vh",
                     rotate: 200,
-                    duration: 4,
+                    duration: 3,
                     scale: 0.3,
                 });
             }
@@ -50,14 +50,14 @@ function Skills() {
             //-------Desktop Animation ---------
             if (observer1.inView) {
                 control.start({
-                    x: '-25.5vw',
+                    x: 0,
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
                 controlShip.start({
-                    x: '-100vw',
-                    y: '-50vh',
+                    x: '-110vw',
+                    y: '-15vh',
                     rotate: 180,
                     transition: {
                         scale: 0.9, duration: 4
@@ -65,10 +65,10 @@ function Skills() {
                 });
             }
             if (!observer1.inView) {
-                control.start({x: '-150vw'})
+                control.start({x: '-100vw'})
                 controlShip.start({
-                    x: '100vw',
-                    y: "-50vh",
+                    x: '110vw',
+                    y: "-17vh",
                     rotate: 200,
                     duration: 4,
                     scale: 0.3,
@@ -76,8 +76,9 @@ function Skills() {
             }
         } }, [observer1.inView, observer1.ref]);
 
-    return (<div ref={observer1.ref}>
-            <motion.div className='Skills'
+    return (<div ref={observer1.ref} className='Skills_main'>
+            <motion.div
+                className='Skills'
                         animate={control}>
                 <div className="mySkills">
                     <h1>My Skills</h1>

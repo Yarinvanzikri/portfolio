@@ -3,7 +3,7 @@ import {motion, useAnimation} from "framer-motion"
 import './ContactMe.scss'
 import {useInView} from "react-intersection-observer";
 import SpaceShip from "../../design/SpaceShip/SpaceShip";
-import Clouds from "../../design/Clouds/Clouds";
+import Earth from "../../design/Earth/Earth";
 function ContactMe(props) {
 
     const observer3 = useInView({
@@ -14,7 +14,7 @@ function ContactMe(props) {
     console.log(window.scrollY)
     const control3 = useAnimation();
     const controlShip3 = useAnimation();
-    const controlClouds = useAnimation();
+    const controlEarth = useAnimation();
 
     useEffect (() => {
         console. log ("use effect hook,  contactMe inView =", observer3.inView);
@@ -22,41 +22,28 @@ function ContactMe(props) {
         if(window.innerWidth <= 600) {
             if (observer3.inView){
                 control3.start({
-                    x: '-42.5vw',
+                    x: 0,
                     transition: {
                         type: 'spring', duration: 1.5, bounce: 0.2
                     }
                 });
-                controlShip3.start({
-                    x: 0,
-                    y: '110vh',
-                    rotate: 270,
-                    scale: 0.9,
-                    transition: {
-                         duration: 5, delay : 5
-                    }
-                });
-                controlClouds.start({
+                controlEarth.start({
                     opacity: 1,
+                    y: "0vh",
+                    x: '-43vw',
+                    scale: 0.4,
                     transition: {
-                        duration: 5,
-                        delay: 7,
+                        duration: 2,
+                        delay: 1
                     }
-
                 });
             }
             if (!observer3.inView){
-                control3.start({x: '-150vw' })
-                controlShip3.start({
-                    x: '100vw',
-                    y: "110vh",
-                    rotate: 200,
-                    duration: 4,
-                    scale: 0.3,
-                });
-                controlClouds.start({
+                control3.start({x: '-100vw' })
+                controlEarth.start({
+                    y: '80vh',
                     opacity: 0,
-                    duration: 10,
+                    duration: 1,
                 })
             }
 
@@ -64,40 +51,26 @@ function ContactMe(props) {
             //-------Desktop Animation ---------
             if (observer3.inView) {
                 control3.start({
-                    x: '-35.5vw',
+                    x: 0,
                     transition: {
                         type: 'spring', duration: 5, bounce: 0.2
                     }
                 });
-                controlShip3.start({
-                    x: 0,
-                    y: ['60vh','60vh','60vh','60vh','60vh','60vh', '75vh', '80vh', '85vh','90vh','95vh','100vh','105vh','110vh','115vh', '120vh'],
-                    rotate: 270,
-                    scale: 1.5,
-                    transition: {
-                         duration: 8, delay : 6
-                    }
-                });
-                controlClouds.start({
+                controlEarth.start({
                             opacity: 1,
+                            y: "33vh",
                     transition: {
-                        duration: 10,
-                        delay: 8
+                        duration: 2,
+                        delay: 1
                     }
                 });
             }
             if (!observer3.inView) {
-                control3.start({x: '-150vw'});
-                controlShip3.start({
-                    x: '100vw',
-                    y: "50vh",
-                    rotate: 200,
-                    duration: 5,
-                    scale: 0.3,
-                });
-                controlClouds.start({
+                control3.start({x: '-100vw'});
+                controlEarth.start({
+                        y: '80vh',
                         opacity: 0,
-                        duration: 10,
+                        duration: 1,
                 })
             }
         }
@@ -105,8 +78,9 @@ function ContactMe(props) {
 
 
     return (
-        <div  ref={observer3.ref}>
-            <motion.div className='ContactMe'
+        <div  ref={observer3.ref} className='ContactMe_main'>
+            <motion.div
+                className='ContactMe'
                         animate={control3}>
                 <h1>Contact Me</h1>
                 <form action="https://formsubmit.co/a90ef266464788c55aac49728a5e4cd5"
@@ -141,12 +115,8 @@ function ContactMe(props) {
                 </form>
             </motion.div>
             <motion.div
-                animate={controlShip3}>
-                <SpaceShip/>
-            </motion.div>
-            <motion.div
-                animate={controlClouds}>
-                <Clouds/>
+                animate={controlEarth}>
+                <Earth/>
             </motion.div>
         </div>
 
