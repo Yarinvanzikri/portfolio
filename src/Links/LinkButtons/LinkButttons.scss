@@ -1,8 +1,9 @@
 .LinkButtons {
-  bottom: 20vh;
+  position: relative;
   z-index: 9;
   left: 0;
   width: 100vw;
+  bottom: 10vh;
 
   .buttonsContainer {
     display: flex;
@@ -129,5 +130,10 @@
       padding: 0;
     }
 
+  }
+}
+@media screen and (max-width: 600px) {
+  .LinkButtons {
+    bottom: 0;
   }
 }

@@ -154,11 +154,14 @@ function MyWork(props) {
                     </div>
                 </div>
             </motion.div>
-            <motion.div
-                animate={controlShip2}
-            >
-                <SpaceShip/>
-            </motion.div>
+            <div className={'earthContainer'}>
+                <motion.div
+                    animate={controlShip2}
+                >
+                    <SpaceShip/>
+                </motion.div>
+            </div>
+
         </div>
 
     );

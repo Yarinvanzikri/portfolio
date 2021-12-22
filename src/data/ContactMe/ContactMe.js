@@ -29,11 +29,9 @@ function ContactMe(props) {
                 });
                 controlEarth.start({
                     opacity: 1,
-                    y: "0vh",
-                    x: '-43vw',
-                    scale: 0.4,
+                    y: "60vh",
                     transition: {
-                        duration: 2,
+                        duration: 3,
                         delay: 1
                     }
                 });
@@ -41,7 +39,7 @@ function ContactMe(props) {
             if (!observer3.inView){
                 control3.start({x: '-100vw' })
                 controlEarth.start({
-                    y: '80vh',
+                    y: '100vh',
                     opacity: 0,
                     duration: 1,
                 })
@@ -58,7 +56,7 @@ function ContactMe(props) {
                 });
                 controlEarth.start({
                             opacity: 1,
-                            y: "33vh",
+                            y: "5vh",
                     transition: {
                         duration: 2,
                         delay: 1
@@ -68,7 +66,7 @@ function ContactMe(props) {
             if (!observer3.inView) {
                 control3.start({x: '-100vw'});
                 controlEarth.start({
-                        y: '80vh',
+                        y: '100vh',
                         opacity: 0,
                         duration: 1,
                 })
@@ -114,10 +112,13 @@ function ContactMe(props) {
                     </div>
                 </form>
             </motion.div>
-            <motion.div
-                animate={controlEarth}>
-                <Earth/>
-            </motion.div>
+            {/*<div className={'earthContainer'}>*/}
+                <motion.div
+                            animate={controlEarth}>
+                    <Earth/>
+                </motion.div>
+            {/*</div>*/}
+
         </div>
 
     );

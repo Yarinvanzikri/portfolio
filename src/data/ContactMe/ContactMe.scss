@@ -72,9 +72,17 @@
   }
 
 }
+.earthContainer {
+  width: 100vw;
+  margin: 0 auto;
+}
 @media screen and (max-width: 600px) {
   .ContactMe {
     width: 85%;
     top: 195vh;
+  }
+  .earthContainer {
+    width: 50vw;
+
   }
 }
