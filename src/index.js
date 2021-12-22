@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import {BrowserRouter} from "react-router-dom";
-window.onload=function(){
-    setTimeout(function(){
-    window.scrollTo(0, 1);
-    }, 0);
-}
 ReactDOM.render(
   <React.StrictMode>
        <BrowserRouter>
