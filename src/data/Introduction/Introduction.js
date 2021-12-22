@@ -42,7 +42,7 @@ function Introduction(props) {
                     // Mobile
                     <motion.div
                         initial={{y: '300vh', scale: 0.3}}
-                        animate={{y: '-20vh',scale: 0.6}}
+                        animate={{y: '-30vh',scale: 0.6}}
                         transition={{ type: "spring", duration: 4, bounce: 0.2, delay: 1}}>
                         <Planet/>
                     </motion.div>
