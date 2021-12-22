@@ -7,7 +7,6 @@ function Planet(props) {
                 <div className="planet-ring2"> </div>
                 <div className="planet"> </div>
                 <div className="shine"> </div>
-                <div className="shine-2"> </div>
                 <div className="planet-ring"> </div>
                 <div className="planet-crater"> </div>
             </div>

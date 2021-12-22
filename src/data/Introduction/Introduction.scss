@@ -8,7 +8,7 @@
 .centeredPlanet {
   display: flex;
   justify-content: center;
-  width: 100vw;
+  margin-top: 10vh;
 }
 .Introduction {
   width: 80vw;
@@ -35,8 +35,24 @@
 
 
 }
+
+
 @media screen and (max-width: 600px) {
   .Introduction {
     width: 100vw;
+  }
+  .centeredPlanet {
+    margin-top: 0;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+  .Introduction {
+    width: 100vw;
+    margin-top: 20vh;
+  }
+  .centeredPlanet {
+    margin-top: -10vh;
   }
 }

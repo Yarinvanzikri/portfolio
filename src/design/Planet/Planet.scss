@@ -4,16 +4,11 @@ $purple2 : #730F8E;
 $purple-pink:#A21190;
 $pink : #EA3281;
 $purple-pink1: #CE0682;
-$blue: #6E81E3;
 $light-pink: #eb6db4;
 $fuscia : #f9026d;
-$meteor-yellow: #fedc01;
+
 
 .Planet {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 
 
 
@@ -25,7 +20,7 @@ $meteor-yellow: #fedc01;
   border-radius:200px;
   background: (linear-gradient(150deg, $fuscia, transparent ,transparent,transparent));
   box-shadow: 10px 10px 500px 180px rgba(0, 0, 0, 0.4);
-  animation: shadowAnima ease-in-out  30s infinite;
+  animation: shadowAnima ease-in-out  25s infinite;
   animation-delay: 6.5s;
   .shine {
     width: 0;
@@ -50,37 +45,7 @@ $meteor-yellow: #fedc01;
     }
   } //end of shine
 
-  .shine-2 {
-    position: absolute;
-    width: 13px;
-    height: 11px;
-    background: #eb6db4;
-    border-radius: 100px;
-    top: 65px;
-    left: 45.5px;
-    transform: rotate(-55deg);
-    &::after {
-      @extend .shine-2;
-      content: "";
-      top: 9px;
-      left: 43.5px;
-      transform: rotate(206deg);
-      width: 12px;
-      height: 10px;
-    }
 
-    &::before {
-      content :"";
-      position:absolute;
-      height:10px;
-      width:14px;
-      background:$light-pink;
-      border-radius: 200px;
-      top: 24px;
-      left: 60px;
-      transform: rotate(40deg);
-    }
-  }
   .planet-ring {
     width:300px;
     height:40px;
