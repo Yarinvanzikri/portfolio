@@ -8,14 +8,10 @@ function Description() {
         threshold: 0.9,
         triggerOnce: true
     });
-    console.log('Skills entry: ', observer.entry)
-    console.log('Skills inView: ', observer.inView)
-    console.log(window.scrollY)
 
     const control0 = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook,  skills inView =", observer.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
             if (observer.inView){

@@ -9,10 +9,6 @@ function Skills() {
         threshold: 0.9,
         triggerOnce: true
     });
-    console.log('Skills entry: ', observer1.entry)
-    console.log('Skills inView: ', observer1.inView)
-    console.log(window.scrollY)
-
     const control = useAnimation();
     const controlShip = useAnimation();
 

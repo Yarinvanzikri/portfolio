@@ -10,8 +10,6 @@ function MyWork(props) {
         threshold: 0.9,
         triggerOnce: true
     });
-    console.log('MyWork entry: ', observer2.entry)
-    console.log(window.scrollY)
     const control2 = useAnimation();
     const controlShip2 = useAnimation();
 

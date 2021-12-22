@@ -9,12 +9,10 @@ function Space() {
 
         function randomSize() {
                 let starSize = random(0.5,1.5)
-                // console.log('starSize: ', starSize);
                 return starSize
         }
         function randomDuration() {
             let animationDuration = random(1500, 3000);
-            // console.log('animationDuration: ',animationDuration)
             return animationDuration
         }
 

@@ -10,10 +10,7 @@ function ContactMe(props) {
         threshold: 0.9,
         triggerOnce: true
     });
-    console.log('ContactMe entry: ', observer3.entry)
-    console.log(window.scrollY)
     const control3 = useAnimation();
-    const controlShip3 = useAnimation();
     const controlEarth = useAnimation();
 
     useEffect (() => {
