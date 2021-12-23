@@ -22,13 +22,13 @@
 .aboutMe {
   text-align: center;
   p{
-    font-size: 2.5vh;
+    font-size: 3vh;
     color: #2276cc;
     text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
     text-align: left;
   }
   h1{
-    font-size: 3.5vh;
+    font-size: 4vh;
     color: #b91787;
     text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
   }
@@ -37,5 +37,20 @@
   .Description {
     width: 85%;
     }
+  .aboutMe {
+    text-align: center;
+    p{
+      font-size: 2.5vh;
+      color: #2276cc;
+      text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+      text-align: left;
+    }
+    h1{
+      font-size: 3.5vh;
+      color: #b91787;
+      text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+    }
+  }
+
 }
 

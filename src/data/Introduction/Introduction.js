@@ -21,7 +21,7 @@ function Introduction(props) {
                 //Desktop
                 <motion.div className='Introduction'
                         initial={{y: '-100vh', visibility: 'hidden'}}
-                        animate={{y: '10vh' , visibility: 'visible'}}
+                        animate={{y: '20vh' , visibility: 'visible'}}
                         transition={{duration: 1.5, type: "spring" , delay: 1.7}}>
                     <div className="Introduction__logo">
                         <Logo/>

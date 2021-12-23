@@ -18,45 +18,39 @@
   .node{
     border-radius:3px;
     width:80%;
-    animation:node 2s forwards;
   }
   .html{
     border-radius:3px;
     width:90%;
-    animation:html 2.5s forwards;
   }
   .css{
     border-radius:3px;
     width:85%;
-    animation:css 3s forwards;
   }
   .react{
     border-radius:3px;
     width:85%;
-    animation:react 3.5s forwards;
   }
   .javascript{
     border-radius:3px;
     width:88%;
-    animation:javascript 4s forwards;
   }
   .git{
     border-radius:3px;
     width:75%;
-    animation:git 4.5s forwards;
   }
 }
 
 .mySkills {
   text-align: center;
   p{
-    font-size: 2.5vh;
+    font-size: 3vh;
     color: #2276cc;
     text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
     text-align: left;
   }
   h1{
-    font-size: 3.5vh;
+    font-size: 4vh;
     color: #b91787;
     text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
   }
@@ -94,61 +88,27 @@
     float:left;
     background:#1669be;
   }
-
-  @keyframes node{
-    0%{
-      width:0;
-    }
-    100%{
-      width:80%;
-    }
-  }
-  @keyframes html{
-    0%{
-      width:0;
-    }
-    100%{
-      width:90%;
-    }
-  }
-  @keyframes css{
-    0%{
-      width:0;
-    }
-    100%{
-      width:85%;
-    }
-  }
-  @keyframes react{
-    0%{
-      width:0;
-    }
-    100%{
-      width:85%;
-    }
-  }
-  @keyframes javascript{
-    0%{
-      width:0;
-    }
-    100%{
-      width:88%;
-    }
-  }
-
-  @keyframes git{
-    0%{
-      width:0;
-    }
-    100%{
-      width:75%;
-    }
-  }
 }
 @media screen and (max-width: 600px) {
   .Skills {
     width: 85%;
     top: 100vh;
     }
+  .mySkills {
+    text-align: center;
+    p{
+      font-size: 2.5vh;
+      color: #2276cc;
+      text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+      text-align: left;
+    }
+    h1{
+      font-size: 3.5vh;
+      color: #b91787;
+      text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+    }
+  }
+
+
 }
 

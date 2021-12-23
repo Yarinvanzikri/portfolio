@@ -41,7 +41,7 @@ function Description() {
                 control0.start({x: '100vw'});
             }
         }
-         }, [observer.inView, observer.ref]);
+         }, [observer.inView, observer.ref, control0]);
 
 
     return (<div ref={observer.ref} className={"Description_main"}>

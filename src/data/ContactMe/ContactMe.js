@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import {motion, useAnimation} from "framer-motion"
 import './ContactMe.scss'
 import {useInView} from "react-intersection-observer";
-import SpaceShip from "../../design/SpaceShip/SpaceShip";
 import Earth from "../../design/Earth/Earth";
 function ContactMe(props) {
 
@@ -14,7 +13,6 @@ function ContactMe(props) {
     const controlEarth = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook,  contactMe inView =", observer3.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
             if (observer3.inView){
@@ -69,7 +67,7 @@ function ContactMe(props) {
                 })
             }
         }
-    }, [observer3.inView, observer3.ref]);
+    }, [observer3.inView, observer3.ref, control3, controlEarth]);
 
 
     return (

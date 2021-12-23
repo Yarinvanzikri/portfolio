@@ -7,7 +7,6 @@ import MyWork from "../data/MyWork/MyWork";
 import ContactMe from "../data/ContactMe/ContactMe";
 import {motion} from "framer-motion";
 import SpaceShip from "../design/SpaceShip/SpaceShip";
-import Planet from "../design/Planet/Planet";
 import './Home.scss'
 import LInkButtons from "../Links/LinkButtons/LInkButtons";
 import Resume from "../Links/Resume/Resume";

@@ -13,7 +13,6 @@ function Skills() {
     const controlShip = useAnimation();
 
     useEffect (() => {
-        console. log ("use effect hook,  skills inView =", observer1.inView);
         //-------Mobile Animation ---------
         if(window.innerWidth <= 600) {
             if (observer1.inView){
@@ -70,7 +69,7 @@ function Skills() {
                     scale: 0.3,
                 });
             }
-        } }, [observer1.inView, observer1.ref]);
+        } }, [observer1.inView, observer1.ref, control, controlShip]);
 
     return (<div ref={observer1.ref} className='Skills_main'>
             <motion.div

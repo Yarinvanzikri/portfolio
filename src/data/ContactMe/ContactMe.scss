@@ -16,7 +16,7 @@
 
   h1 {
     text-align: center;
-      font-size: 4vh;
+      font-size: 5vh;
       color: #b91787;
       text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
   }
@@ -80,6 +80,12 @@
   .ContactMe {
     width: 85%;
     top: 195vh;
+    h1 {
+      text-align: center;
+      font-size: 4vh;
+      color: #b91787;
+      text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+    }
   }
   .earthContainer {
     width: 50vw;

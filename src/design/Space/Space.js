@@ -19,7 +19,6 @@ function Space() {
 return (
         <div className="Space">
             <Meteor/>
-            <Meteor/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+1} duration={randomDuration()+10000} name={'glowBig'}/>

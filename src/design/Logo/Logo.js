@@ -6,7 +6,7 @@ function Logo(props) {
     return (
         <div>
             <div className={'logo'}>
-                <img src={logo} />
+                <img src={logo} alt={'coding'}/>
             </div>
             <div className={'mainHeader'}>
                 <h1>Yarin Ben - Zikri</h1>

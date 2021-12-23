@@ -1,8 +1,7 @@
 import React from 'react';
 import './Earth.scss'
-import Space from "../Space/Space";
 
-function Earth(props) {
+function Earth() {
     return (
         <div className={'Earth'}>
                 <div className="earth"> </div>

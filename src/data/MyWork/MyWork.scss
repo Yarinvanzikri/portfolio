@@ -3,14 +3,14 @@
   z-index: 9;
 }
 .MyWork {
-  line-height: 4vh;
+  line-height: 3.5vh;
   width: 60%;
   background: rgb(114, 18, 80, 0.2);
   box-shadow: inset 10px 10px 100px 30px rgba(37, 2, 38, 0.88);
   border: 4px solid rgba(37, 2, 38, 0.88);
   border-radius: 50px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 35px;
   z-index: 9;
 
   &__btn {
@@ -22,7 +22,7 @@
 
     button {
       text-align: center;
-      width: 50%;
+      width: 45%;
       height: 3vh;
       font-size: 2vh;
       background: rgba(34, 140, 245, 0.9);;
@@ -30,6 +30,7 @@
       border-radius: 5px;
       color: #730f8e;
       border: 1px solid #730f8e;
+      margin: 10px;
 
       &:hover {
         background: rgba(34, 140, 245, 1);
@@ -44,14 +45,14 @@
     text-align: left;
 
     p {
-      font-size: 2.5vh;
+      font-size: 3vh;
       color: #2276cc;
       text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
       text-align: left;
     }
 
     h1 {
-      font-size: 3.5vh;
+      font-size: 4vh;
       color: #b91787;
       text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
     }
@@ -66,6 +67,46 @@
   .MyWork {
     line-height: 3vh;
     width: 85%;
-    top: 140vh;
+    padding: 20px;
+    &__btn {
+      margin:15px auto;
+      outline: none;
+      text-align: center;
+      width: 100%;
+      height: 2.5vh;
+      }
+      button {
+        text-align: center;
+        width: 40%;
+        height: 3vh;
+        font-size: 2vh;
+        background: rgba(34, 140, 245, 0.9);;
+        outline: none;
+        border-radius: 5px;
+        color: #730f8e;
+        border: 1px solid #730f8e;
+        margin: 10px;
+      }
+    .projects {
+      text-align: left;
+
+      p {
+        font-size: 2.5vh;
+        color: #2276cc;
+        text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+        text-align: left;
+      }
+
+      h1 {
+        font-size: 3.5vh;
+        color: #b91787;
+        text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+      }
+
+      .projectHeader {
+        text-align: center;
+        font-size: 4.5vh;
+      }
+    }
   }
 }
