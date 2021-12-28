@@ -21,13 +21,15 @@ function Home() {
                 <ContactMe/>
 
                 {(window.innerWidth >= 600) ?
+                    //Desktop
                     <motion.div
-                        initial={{ x: '-100vw' , y:'-280vh',scale: 0.1, rotate: 0}}
-                        animate={{ x: '100vw', y:'-200vh' ,scale: 0.9,rotate: 50} }
+                        initial={{ x: '-100vw' , y:'-340vh',scale: 0.1, rotate: 0}}
+                        animate={{ x: '100vw', y:'-250vh' ,scale: 0.9,rotate: 50} }
                         transition={{duration: 3}}>
                         <SpaceShip/>
                     </motion.div>
                     :
+                    //Mobile
                     <motion.div
                         initial={{ x: '-100vw' , y:'-350vh',scale: 0.1, rotate: 0}}
                         animate={{ x: '100vw', y:'-300vh' ,scale: 0.9,rotate: 50} }

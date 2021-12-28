@@ -45,19 +45,24 @@ function Description() {
 
 
     return (<div ref={observer.ref} className={"Description_main"}>
-        <motion.div
-            className={"Description"}
-            animate={control0}>
-            <div className="aboutMe">
-                <h1>About Me</h1>
-                <p> Junior Node.js developer, with experience in Front-end technologies such as HTML,
-                    CSS, React.js as well as MongoDB, REST API, and UI/UX.<br /> Graduated from Netcraft
-                    Fullstack course. <br />Looking for entry-level roles in tech companies with
-                    opportunities to learn and grow.
-                </p>
-            </div>
-        </motion.div>
-    </div>
+            <motion.div
+                className={"Description"}
+                animate={control0}>
+                <div className="aboutMe">
+                    <h1>About Me</h1>
+                    <p>Hi, im yarin,<br />
+                        Carpentry enthusiast , drummer & guitarist at my spare time.
+                    </p>
+                    <br />
+                    <p> For the past couple of years im also practicing as </p>
+                    <p> Junior Node.js developer, with experience in Front-end technologies such as HTML,
+                        CSS, React.js as well as MongoDB, REST API, and UI/UX.<br /> Graduated from Netcraft
+                        Fullstack course. <br />Looking for entry-level roles in tech companies with
+                        opportunities to learn and grow.
+                    </p>
+                </div>
+            </motion.div>
+        </div>
     );
 }
 
