@@ -26,7 +26,7 @@ function MyWork(props) {
                 });
                 controlShip2.start({
                     x: '110vw',
-                    y: '-68vh',
+                    y: '-63vh',
                     rotate: 0,
                     scale: 0.5,
                     transition: {
@@ -39,7 +39,7 @@ function MyWork(props) {
                 control2.start({x: '100vw' })
                 controlShip2.start({
                     x: '-100vw',
-                    y: "-70vh",
+                    y: "-65vh",
                     rotate: 20,
                     duration: 5,
                     scale: 0.3,
