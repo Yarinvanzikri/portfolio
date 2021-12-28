@@ -24,7 +24,7 @@ function Skills() {
                 });
                 controlShip.start({
                     x: '-110vw',
-                    y: '-30vh',
+                    y: '-25vh',
                     rotate: 180,
                     transition: {
                         scale: 0.9, duration: 3
@@ -52,7 +52,7 @@ function Skills() {
                 });
                 controlShip.start({
                     x: '-110vw',
-                    y: '-15vh',
+                    y: '-19',
                     rotate: 180,
                     transition: {
                         scale: 0.9, duration: 4
@@ -63,7 +63,7 @@ function Skills() {
                 control.start({x: '-100vw'})
                 controlShip.start({
                     x: '110vw',
-                    y: "-17vh",
+                    y: "-19vh",
                     rotate: 200,
                     duration: 4,
                     scale: 0.3,

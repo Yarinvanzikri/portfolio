@@ -30,7 +30,7 @@
       border-radius: 5px;
       color: #730f8e;
       border: 1px solid #730f8e;
-      margin: 10px;
+      margin: 0.5vh 2px;
 
       &:hover {
         background: rgba(34, 140, 245, 1);
@@ -52,8 +52,13 @@
     }
 
     h1 {
-      font-size: 4vh;
-      color: #b91787;
+      font-size: 4.5vh;
+      color: #c70d89;
+      text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
+    }
+    h2 {
+      font-size: 3.5vh;
+      color: #c70d89;
       text-shadow: -1px 0 black, 0 0.5px black, 0.5px 0 black, 0 -1px black;
     }
 
@@ -67,9 +72,9 @@
   .MyWork {
     line-height: 3vh;
     width: 85%;
-    padding: 20px;
+    padding: 15px;
     &__btn {
-      margin:15px auto;
+      margin:10px auto;
       outline: none;
       text-align: center;
       width: 100%;
@@ -85,7 +90,6 @@
         border-radius: 5px;
         color: #730f8e;
         border: 1px solid #730f8e;
-        margin: 10px;
       }
     .projects {
       text-align: left;

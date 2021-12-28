@@ -15,6 +15,7 @@ function Logo(props) {
                 <h3 style={{color: "#2276cc"}}>Full - Stack Developer</h3>
             </div>
         </div>
+
     );
 }
 

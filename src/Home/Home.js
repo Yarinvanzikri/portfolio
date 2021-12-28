@@ -8,8 +8,7 @@ import ContactMe from "../data/ContactMe/ContactMe";
 import {motion} from "framer-motion";
 import SpaceShip from "../design/SpaceShip/SpaceShip";
 import './Home.scss'
-import LInkButtons from "../Links/LinkButtons/LInkButtons";
-import Resume from "../Links/Resume/Resume";
+
 function Home() {
     return (
         <div className="Home" >
@@ -35,12 +34,6 @@ function Home() {
                         transition={{duration: 2}}>
                         <SpaceShip/>
                     </motion.div> }
-                <div>
-                    <LInkButtons />
-                </div>
-                <div>
-                    <Resume />
-                </div>
             </div>
         </div>
     );

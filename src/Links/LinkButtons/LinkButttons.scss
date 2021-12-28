@@ -1,14 +1,13 @@
 .LinkButtons {
-  position: relative;
   z-index: 9;
   left: 0;
-  width: 100vw;
-  bottom: 10vh;
+  width: 100%;
 
   .buttonsContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 
     .leftButtons {
       display: flex;
@@ -24,14 +23,14 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 7.5vh;
-  height: 7.5vh;
+  width: 7vh;
+  height: 7vh;
   border-radius: 50%;
   background: transparent;
-  margin: 5vh;
+  margin: 2vh 0 ;
 
   a{
-    padding: 3.5vh 3.5vh;
+    padding: 3vh 3vh;
   }
 
   .buttonLogo {
@@ -39,7 +38,7 @@
   }
 }
 .facebook {
-  border: 8px solid rgb(66, 103, 178);
+  border: 7px solid rgb(66, 103, 178);
 
   .facebookIcon {
     color:  rgb(250,250,250);
@@ -57,7 +56,7 @@
 
   }
 .github{
-  border: 8px solid rgb(201, 81, 12);
+  border: 7px solid rgb(201, 81, 12);
   .githubIcon {
     color:  rgb(250,250,250);
   }
@@ -74,7 +73,7 @@
 
 }
 .linkedin{
-  border: 8px solid rgb(250,250,250);
+  border: 7px solid rgb(250,250,250);
   .linkedinIcon {
     color: rgb(68, 131, 197)
   }
@@ -90,7 +89,7 @@
   }
 }
 .whatsapp{
-  border: 8px solid rgb(37,211,102);
+  border: 7px solid rgb(37,211,102);
   .whatsappIcon {
     color: rgb(250, 250, 250)
   }
@@ -106,34 +105,41 @@
   }
 
 }
+.resume {
+  border: 8px solid rgb(136, 7, 95);
+
+  .resumeIcon {
+    color: rgb(250, 250, 250);
+  }
+}
+.resume:hover {
+  border: 3px dotted rgb(24, 103, 185);
+  box-shadow: inset 0 0 25px rgb(199, 13, 137);
+  transition: all 0.5s ease;
+  .resumeIcon {
+    color: rgb(31, 123, 224);
+    text-shadow: 0 0 15px rgb(199, 13, 137);
+    transition: all 0.5s ease;
+  }
+
+}
+
 
 @media screen and (max-width: 600px) {
   .buttonsContainer {
+    padding: 10px;
+    .buttonHalo {
+      width: 6vh;
+      height: 6vh;
+      margin: 4px 5px;
 
-    .leftButtons {
-      margin: 0 0 ;
-      flex-direction: column;
-    }
-    .rightButtons {
-      margin: 0 0 ;
-      flex-direction: column;
+      a {
+        padding: 0;
+      }
     }
   }
-
-  .buttonHalo {
-    width: 7.5vh;
-    height: 7.5vh;
-    margin-top: 1vw;
-
-
-    a {
-      padding: 0;
-    }
-
-  }
-}
-@media screen and (max-width: 600px) {
-  .LinkButtons {
-    bottom: 0;
+  .icon {
+    width: 3vh;
+    height: 3vh;
   }
 }

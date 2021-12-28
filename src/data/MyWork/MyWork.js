@@ -91,7 +91,7 @@ function MyWork(props) {
                             <h1>My Projects</h1>
                         </div>
                         <div>
-                            <h1> Instagram </h1>
+                            <h2> Instagram </h2>
                         </div>
                         <div>
                             <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
@@ -112,7 +112,7 @@ function MyWork(props) {
                     </div>
                     <div>
                         <div>
-                            <h1> Instagram - Demo(Heroku)</h1>
+                            <h2> Instagram - Demo(Heroku)</h2>
                         </div>
                         <div>
                             <p>A social network built with React.js, Sass, mongoDB,Nodejs and Express.</p>
@@ -133,7 +133,7 @@ function MyWork(props) {
                     </div>
                     <div>
                         <div>
-                            <h1> Portfolio</h1>
+                            <h2> Portfolio</h2>
                         </div>
                         <div>
                             <p>This Portfolio made using React>js Sass, Framer Motion & React Observer.</p>
@@ -145,7 +145,7 @@ function MyWork(props) {
                                 </button>
                             </a>
                             <button>
-                                THIS IS THE DEMO
+                                Thats it
                             </button>
                         </div>
                     </div>

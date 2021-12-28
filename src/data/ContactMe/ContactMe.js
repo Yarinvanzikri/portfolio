@@ -3,6 +3,7 @@ import {motion, useAnimation} from "framer-motion"
 import './ContactMe.scss'
 import {useInView} from "react-intersection-observer";
 import Earth from "../../design/Earth/Earth";
+import LInkButtons from "../../Links/LinkButtons/LInkButtons";
 function ContactMe(props) {
 
     const observer3 = useInView({
@@ -24,7 +25,7 @@ function ContactMe(props) {
                 });
                 controlEarth.start({
                     opacity: 1,
-                    y: "60vh",
+                    y: "25vh",
                     transition: {
                         duration: 3,
                         delay: 1
@@ -72,9 +73,11 @@ function ContactMe(props) {
 
     return (
         <div  ref={observer3.ref} className='ContactMe_main'>
+
             <motion.div
                 className='ContactMe'
                         animate={control3}>
+
                 <h1>Contact Me</h1>
                 <form action="https://formsubmit.co/a90ef266464788c55aac49728a5e4cd5"
                       method="POST"
@@ -105,14 +108,14 @@ function ContactMe(props) {
                     <div className='ContactMe__btn'>
                         <button type='submit'>Submit</button>
                     </div>
+                    <LInkButtons/>
                 </form>
             </motion.div>
-            {/*<div className={'earthContainer'}>*/}
-                <motion.div
+
+            <motion.div
                             animate={controlEarth}>
                     <Earth/>
                 </motion.div>
-            {/*</div>*/}
 
         </div>
 
