@@ -11,7 +11,7 @@ function Introduction(props) {
                 // Mobile
                 <motion.div className='Introduction'
                           initial={{y: '-100vh', visibility: 'hidden'}}
-                          animate={{y: '0' , visibility: 'visible'}}
+                          animate={{y: '-10vh' , visibility: 'visible'}}
                           transition={{duration: 1.5, type: "spring" , delay: 1.7}}>
                     <div className="Introduction__logo">
                         <Logo/>
@@ -42,7 +42,7 @@ function Introduction(props) {
                     // Mobile
                     <motion.div
                         initial={{y: '300vh', scale: 0.3}}
-                        animate={{y: '-40vh',scale: 0.6}}
+                        animate={{y: '-60vh',scale: 0.6}}
                         transition={{ type: "spring", duration: 4, bounce: 0.2, delay: 1}}>
                         <Planet/>
                     </motion.div>
