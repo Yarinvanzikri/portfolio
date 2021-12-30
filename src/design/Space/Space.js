@@ -46,13 +46,12 @@ return (
             <Star size={randomSize()+6} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+6} duration={randomDuration()+10000} name={'glowBig'}/>
             <Star size={randomSize()+10} duration={randomDuration()+10000} name={'glowBig'}/>
-            <Star size={randomSize()+15} duration={randomDuration()+10000} name={'glowBig'}/>
             {(window.innerWidth >= 600) ?
-                starLoop(280).map((star)=> {
+                starLoop(281).map((star)=> {
                 return star
             })
                 :
-                starLoop(180).map((star)=> {
+                starLoop(181).map((star)=> {
                     return star
             })
             }
