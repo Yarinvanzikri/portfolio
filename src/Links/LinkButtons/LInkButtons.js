@@ -27,10 +27,11 @@ function LInkButtons(props) {
                         </div>
                     </a>
 
-                        <a href={ResumeYarin} download={'YarinBenZikri-Resume'}>
+                        <a href={ResumeYarin} download={'YarinBenZikri-Resume'} style={{textDecoration: 'none'}}>
                             <div className={"resume buttonHalo "}>
                                 <div className={'buttonLogo'}>
                                     <FontAwesomeIcon icon={faFileDownload} size='2x' className={'resumeIcon icon'} />
+                                    <h6>Resume</h6>
                                 </div>
                             </div>
                         </a>
