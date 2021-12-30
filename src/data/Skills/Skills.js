@@ -93,10 +93,16 @@ function Skills() {
                         <li>
                             <h3>JAVASCRIPT</h3><span className="bar"> <span className="javascript"> </span></span>
                         </li>
+                        <li>
+                            <h3>PYTHON</h3><span className="bar"> <span className="python"> </span></span>
+                        </li>
                     </div>
                     <div>
                         <li>
                             <h3>NODE.JS</h3><span className="bar"> <span className="node"> </span></span>
+                        </li>
+                        <li>
+                            <h3>EXPRESS.JS</h3><span className="bar"> <span className="express"> </span></span>
                         </li>
                         <li>
                             <h3>REACT.JS</h3><span className="bar"> <span className="react"> </span></span>
@@ -105,6 +111,7 @@ function Skills() {
                             <h3>GIT</h3><span className="bar"> <span className="git"> </span></span>
                         </li>
                     </div>
+
 
 
                 </div>
