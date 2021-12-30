@@ -51,7 +51,7 @@ return (
                 return star
             })
                 :
-                starLoop(181).map((star)=> {
+                starLoop(131).map((star)=> {
                     return star
             })
             }
